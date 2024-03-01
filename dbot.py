@@ -1,4 +1,5 @@
 import discord
+import os
 from discord.ext import commands
 
 # 봇 설정
@@ -30,9 +31,9 @@ async def ceikawa(ctx):
 
     
 
-
+access_token = os.environ["BOT_TOKEN"]
 # 봇 실행
-bot.run(TOKEN)
+bot.run(access_token)
 
 
 
